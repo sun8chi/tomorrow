@@ -1,0 +1,170 @@
+// all
+.center {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.des {
+  position: relative;
+  padding: 0 70px 0 20px;
+  text-align: left;
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0%;
+    top: -100px;
+    width: 50px;
+    height: 200px;
+    background-image: url(../img/dots.svg);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    @include device-lg {
+      display: none;
+    }
+  }
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $default;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-family: 'Noto Sans TC';
+    font-weight: 200;
+    line-height: 1.7;
+    letter-spacing: 0.15em;
+  }
+  a {
+    border: 1px solid #fff;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    letter-spacing: 0.15em;
+    &:hover {
+      background: #fff;
+      color: #313131;
+    }
+  }
+  @include device-lg {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+  }
+}
+.section {
+  background-image: url(../img/bg.png);
+}
+// home
+.home,
+.contact {
+  background: linear-gradient(to bottom, #17a9b6 59%, #17a9b6 59%, #0f4664 98%);
+  color: #fff;
+}
+.home h1 {
+  font-weight: 700;
+}
+.home_img {
+  width: 100%;
+  @include device-lg {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+}
+.home_logo {
+  width: 70%;
+  @include device-lg {
+    width: 200px;
+  }
+}
+.home .fp-tableCell {
+  @include device-lg {
+    vertical-align: middle;
+    padding-bottom: 50px;
+  }
+}
+
+//fullimg
+.section_fullimg {
+  .slide {
+    height: 100%;
+  }
+}
+.img_height {
+  img {
+    height: 100vh;
+  }
+  @include device-lg {
+    height: 40vh;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}
+.img_width {
+  img {
+    width: 100%;
+  }
+}
+.full_img {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  @include device-lg {
+    height: 40vh;
+  }
+  @include device-md {
+    height: 30vh;
+  }
+}
+.fp-tableCell {
+  @include device-lg {
+    vertical-align: top;
+  }
+}
+.fp-slidesNav.bottom {
+  bottom: 90px;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: rgb(193, 193, 193);
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  background: $default;
+}
+.map {
+  #map {
+    height: 100vh;
+    width: 100%;
+  }
+  @include device-lg {
+    #map {
+      height: 30vh;
+    }
+  }
+}
+
+.footer_logo {
+  text-align: center;
+  margin-bottom: 30px;
+  img {
+    width: 200px;
+  }
+}
+
+.team_img {
+  @include device-lg {
+    img {
+      width: 300px;
+    }
+  }
+}

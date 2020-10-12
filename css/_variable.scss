@@ -1,0 +1,12 @@
+$default:#17a9b6;
+$dark:#00536F;
+@mixin device-lg {
+    @media (max-width:992px) {
+        @content;
+    }
+}
+@mixin device-md {
+    @media (max-width:768px) {
+        @content;
+    }
+}

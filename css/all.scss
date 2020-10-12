@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
+@import url('https://fonts.googleapis.com/earlyaccess/cwtexming.css');
+
+@import "variable.scss";
+@import "normalize.css";
+@import "jquery.fullpage.css";
+@import "magnific-popup.css";
+@import "font-awesome.min.css";
+@import "owl.carousel.css";
+@import "bootstrap.min.css";
+@import "animate.css";
+@import "navbar.scss";
+@import "section.scss";
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 18px;
+    @include device-lg {
+        font-size: 16px;
+    }
+}
+body {
+    font-family: 'Noto Sans TC',"微軟正黑體", "Microsoft JhengHei", Meiryo, Verdana, Arial, sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: $default;
+}
